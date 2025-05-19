@@ -1,0 +1,213 @@
+a{
+    transition: all 225ms ease-in-out;
+}
+a:hover{
+    opacity: 75%;
+}
+
+.buttons-2{
+    transition: all 225ms;
+    z-index: 1;
+}
+.buttons-2:hover{
+    border: 1px solid #196555;
+
+    .button-2{
+        color:#196555;
+    }
+}
+.buttons{
+    transition: opacity 225ms ease-in-out;
+}
+.buttons:hover{
+    opacity: 75%;
+}
+
+
+.frame{
+    opacity: 0;
+    transition: all 800ms ease 0s;
+  }
+.frame._active{
+    opacity: 1;
+}
+
+.card{
+    opacity: 0;
+    transition: all 1100ms ease 0s;
+}
+.card._active{
+    opacity: 1;
+}
+
+.card-2{
+    opacity: 0;
+    transition: all 1100ms ease 0s;
+}
+.card-2._active{
+    opacity: 1;
+}
+
+.buttons_s{
+    opacity: 0;
+    transition: all 1100ms ease 0s;
+}
+.buttons_s._active{
+    opacity: 1;
+}
+
+.frame-6{
+    opacity: 0;
+    transition: all 1400ms ease 0s;
+}
+.frame-6._active{
+    opacity: 1;
+}
+
+.number {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .number.viz {
+    opacity: 1;
+  }
+
+
+@media (max-width: 1260px){
+    .div{
+        width: 50vw;
+    }
+    .image-cont{
+        width: 50vw;
+    }
+    .container{
+        display: grid;
+
+    }
+    .frame-6{
+        margin-left: 0;
+        position: relative;
+        padding: 100px 0 0 1.5rem;
+    }
+    .frame-6:before{
+        bottom:-3.5rem;
+        right: 30%;
+    }
+    .image-plan{
+        width: 100vw;
+        height: auto;
+    }
+}
+@media(max-width: 920px){
+    .frame{
+        display: grid;
+    }
+    .image-cont{
+        width: 100%;
+        height: 42.5625rem;
+        overflow: hidden;
+    }
+    .div{
+        width: 100%;
+        max-width: 697px;
+        margin-left: 0;
+        padding: 0 1.5rem;
+    }
+    .div::before{
+        top: 0;
+        bottom: var(--image-cont-height);
+    }
+    .overlap-group{
+        padding-top: 2.5rem;
+    }
+    .SHOWCASE {
+
+    min-height: calc(var(--image-cont-bottom) - var(--header-height));
+  }
+  .img{
+    right: -133vw;
+  }
+}
+@media(max-width:768px){
+    :root {
+        --header-height: 5.125rem;
+    }
+    .frame-5{
+        grid-template-columns: none;
+    }
+    .LOGO img{
+        height: 3.125rem;
+    }
+    .LOGO{
+        width: auto;
+        height: auto;
+    }
+    .image-cont{
+        height: 34.375rem;
+        min-height: auto;
+    }
+    .div-3{
+        padding: 0;
+    }
+    .frame-6{
+        width: 100%;
+        max-width:594px;
+        padding: 100px 1.5rem 0 1.5rem;
+    }
+    .frame-7{
+        display: grid;
+    }
+    .frame-8{
+        padding: .875rem 1.5rem;
+    }
+    .text-wrapper{
+        font-size: 52px;
+        line-height: 64px;
+    }
+    .card{
+        max-width: 100%;
+    }
+    .card-top-2{
+        gap: 16px;
+    }
+}
+@media(max-width:480px) {
+    :root {
+        --header-height: 4rem;
+    }
+    .LOGO img{
+        height: 2rem;
+    }
+    .element,
+  .text-wrapper {
+    font-size: 40px;
+    line-height: 52px;
+    white-space: normal;
+  }
+  .p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .div {
+    padding: 0 1rem;
+  }
+  .button{
+    white-space: wrap;
+  }
+  .card-img{
+    display: none;
+  }
+  .bitch{
+    display: block;
+  }
+  .bitch-container{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+  }
+  .element-2{
+    align-self: center;
+  }
+}
