@@ -128,6 +128,9 @@ a:hover{
   .img{
     right: -133vw;
   }
+  .frame-11{
+    margin-bottom: 40px;
+  }
 }
 @media(max-width:768px){
     :root {
@@ -136,10 +139,10 @@ a:hover{
     .frame-5{
         grid-template-columns: none;
     }
-    .LOGO img{
+    .LOGO_S img{
         height: 3.125rem;
     }
-    .LOGO{
+    .LOGO_S{
         width: auto;
         height: auto;
     }
@@ -171,14 +174,28 @@ a:hover{
     .card-top-2{
         gap: 16px;
     }
+    .modal-content{
+        padding: 72px 32px;
+    }
 }
 @media(max-width:480px) {
     :root {
         --header-height: 4rem;
     }
-    .LOGO img{
+    .LOGO_S img{
         height: 2rem;
     }
+    .LOGO{
+        width: auto;
+        height: auto;
+    }
+    .LOGO_SN img{
+        width: 100%;
+        height: 100%s;
+        max-width: 220px;
+        max-height: 68px;
+    }
+
     .element,
   .text-wrapper {
     font-size: 40px;
@@ -198,10 +215,10 @@ a:hover{
   .card-img{
     display: none;
   }
-  .bitch{
+  .new_img{
     display: block;
   }
-  .bitch-container{
+  .new_img-container{
     display: flex;
     gap: 24px;
     align-items: center;
@@ -209,5 +226,16 @@ a:hover{
   }
   .element-2{
     align-self: center;
+  }
+  .text-wrapper-5{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 52px;
+  }
+  .text-wrapper-9{
+    white-space: wrap;
+  }
+  .text-wrapper-10{
+    white-space: wrap;
   }
 }
